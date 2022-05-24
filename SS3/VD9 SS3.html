@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VD9 SS3</title>
+  <script src="Angular/angular.min.js"></script>
+</head>
+<body ng-app="spApp">
+<h1>ng-include directive</h1>
+<div ng-controller="SPController" class="container">
+    <div ng-include=" 'vd9mainContent.html' "></div>
+    <div ng-include=" 'vd9sideBar.html' "></div>
+</div>
+</body>
+<script>
+    var MyApp = angular.module('spApp', []);
+    MyApp.controller("SPController", function ($scope){
+        $scope.quantity = 1;
+        $scope.price = 9.99;
+    });
+</script>
+</html>

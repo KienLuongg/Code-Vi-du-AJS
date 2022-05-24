@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VD13 SS3</title>
+    <script src="Angular/angular.min.js"></script>
+</head>
+<body ng-app>
+<h1>AngularJS Uppercase and Lowercase Filter</h1>
+<div ng-init="person.firstName='James';person.lastName='Bond'">
+    Lower Case:{{person.firstName + '' + person.lastName | lowercase}}<br/>
+    Upper Case:{{person.firstName + '' + person.lastName | uppercase}}<br/>
+</div>
+</body>
+</html>
